@@ -42,26 +42,12 @@
 			font-size: 9vw;
 		}
 	}
-	.social-link {
-		border: 1px solid #afafaf;
-		display: inline-block;
-		font-size: 18px;
-		width: 34px;
-		height: 34px;
-		line-height: 34px;
-		text-align: center;
-		vertical-align: middle;
-		margin: 0 1px 8px;
-		-webkit-border-radius: 17px; 
-		-moz-border-radius: 17px; 
-		border-radius: 17px; 
-
+	
+	.social-link, .social-link:hover {
+		color: #afafaf;
+		text-decoration: none;
 	}
-
-	.social-link i {
-		color:#afafaf;
-    line-height: 30px;
-	}
+	
 	@-webkit-keyframes in_color_change {
 		from { color: #afafaf; }
 		to { color: #0077B5; }
@@ -113,7 +99,7 @@
 		to { color: #000000; }
 	}
 
-	.social-link:hover i.gt {
+	.social-link:hover .gt {
 		-webkit-animation: gt_color_change .5s;
 		-moz-animation: gt_color_change .5s;
 		-ms-animation: gt_color_change .5s;
@@ -212,6 +198,11 @@
 		animation: tw_color_change .5s;
 		color: #1da1f2;
 	}
+	.blog {
+		font-family: 'Comfortaa', cursive;
+		font-size: 9px;
+		font-weight: bold;
+	}
 </style>
 </head>
 <body>
@@ -221,28 +212,52 @@
 			<div class="text-center">
 
 
-				<a href="mailto:restu.suhendar@gmail.com" target="_blank" class="social-link">
-					<i class="fas fa-at gt"></i>
+				<a href="mailto:restu.suhendar@gmail.com" class="social-link">
+					<span class="fa-stack">
+						<i class="far fa-circle fa-stack-2x"></i>
+						<i class="fas fa-at fa-stack-1x gt"></i>
+					</span>
 				</a>
 
 				<a href="https://www.linkedin.com/in/restusuhendar" target="_blank" class="social-link">
-					<i class="fab fa-linkedin-in in"></i>
+					<span class="fa-stack">
+						<i class="far fa-circle fa-stack-2x"></i>
+						<i class="fab fa-linkedin-in fa-stack-1x in"></i>
+					</span>
 				</a>
 
 				<a href="https://github.com/aarestu" target="_blank" class="social-link">
-					<i class="fab fa-github gt"></i>
+					<span class="fa-stack">
+						<i class="far fa-circle fa-stack-2x"></i>
+						<i class="fab fa-github fa-stack-1x gt"></i>
+					</span>
 				</a>
 
 				<a href="https://www.youtube.com/user/inforestu" target="_blank" class="social-link">
-					<i class="fab fa-youtube yt"></i>
+					<span class="fa-stack">
+						<i class="far fa-circle fa-stack-2x"></i>
+						<i class="fab fa-youtube fa-stack-1x yt"></i>
+					</span>
 				</a>
 
 				<a href="https://facebook.com/restu.suhendar" target="_blank" class="social-link">
-					<i class="fab fa-facebook-f fb"></i>
+					<span class="fa-stack">
+						<i class="far fa-circle fa-stack-2x"></i>
+						<i class="fab fa-facebook-f fa-stack-1x fb"></i>
+					</span>
 				</a>
 
 				<a href="https://twitter.com/aarestu_" target="_blank" class="social-link">
-					<i class="fab fa-twitter tw"></i>
+					<span class="fa-stack">
+						<i class="far fa-circle fa-stack-2x"></i>
+						<i class="fab fa-twitter fa-stack-1x tw"></i>
+					</span>
+				</a>
+				<a href="http://blog.aarestu.com" target="_blank" class="social-link">
+					<span class="fa-stack">
+						<i class="far fa-circle fa-stack-2x"></i>
+						<span class="blog fa-stack-1x gt">blog</span>
+					</span>
 				</a>
 
 			</div>
