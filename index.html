@@ -1,235 +1,236 @@
 <html>
-  <head>
-    <link href='https://fonts.googleapis.com/css?family=Comfortaa:300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <style>
-    body {
-      background-color: #efefef;
-    }
-    .vertical-center {
-      min-height: 100%;
-      min-height: 100vh;
+<head>
+	<link href='https://fonts.googleapis.com/css?family=Comfortaa:300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<style>
+	body {
+		background-color: #efefef;
+	}
+	.vertical-center {
+		min-height: 100%;
+		min-height: 100vh;
 
-      display: flex;
-      align-items: center;
-    }
-    .title {
-      font-family: 'Comfortaa', cursive;
-      text-align: center;
-      font-size: 9em;
-    }
-    .social-link {
-      border: 1px solid #afafaf;
-      display: inline-block;
-      font-size: 18px;
-      width: 34px;
-      height: 34px;
-      line-height: 34px;
-      text-align: center;
-      vertical-align: middle;
-      margin: 0 1px 8px;
-      -webkit-border-radius: 17px; 
-      -moz-border-radius: 17px; 
-      border-radius: 17px; 
-      
-    }
-    
-    .social-link i {
-      color:#afafaf;
-    }
-    @-webkit-keyframes in_color_change {
-			from { color: #afafaf; }
-			to { color: #0077B5; }
-		}
-		@-moz-keyframes in_color_change {
-			from { color: #afafaf; }
-			to { color: #0077B5; }
-		}
-		@-ms-keyframes in_color_change {
-			from { color: #afafaf; }
-			to { color: #0077B5; }
-		}
-		@-o-keyframes in_color_change {
-			from { color: #afafaf; }
-			to { color: #0077B5; }
-		}
-		@keyframes in_color_change {
-			from { color: #afafaf; }
-			to { color: #0077B5; }
-		}
-    
-    .social-link:hover i.in {
-      -webkit-animation: in_color_change .5s;
-			-moz-animation: in_color_change .5s;
-			-ms-animation: in_color_change .5s;
-			-o-animation: in_color_change .5s;
-			animation: in_color_change .5s;
-      color: #0077B5;
-    }
-    
-    @-webkit-keyframes gt_color_change {
-			from { color: #afafaf; }
-			to { color: #000000; }
-		}
-		@-moz-keyframes gt_color_change {
-			from { color: #afafaf; }
-			to { color: #000000; }
-		}
-		@-ms-keyframes gt_color_change {
-			from { color: #afafaf; }
-			to { color: #000000; }
-		}
-		@-o-keyframes gt_color_change {
-			from { color: #afafaf; }
-			to { color: #000000; }
-		}
-		@keyframes gt_color_change {
-			from { color: #afafaf; }
-			to { color: #000000; }
-		}
-    
-    .social-link:hover i.gt {
-      -webkit-animation: gt_color_change .5s;
-			-moz-animation: gt_color_change .5s;
-			-ms-animation: gt_color_change .5s;
-			-o-animation: gt_color_change .5s;
-			animation: gt_color_change .5s;
-      color: #000000;
-    }
-    
-    @-webkit-keyframes yt_color_change {
-			from { color: #afafaf; }
-			to { color: #ff0000; }
-		}
-		@-moz-keyframes yt_color_change {
-			from { color: #afafaf; }
-			to { color: #ff0000; }
-		}
-		@-ms-keyframes yt_color_change {
-			from { color: #afafaf; }
-			to { color: #ff0000; }
-		}
-		@-o-keyframes yt_color_change {
-			from { color: #afafaf; }
-			to { color: #ff0000; }
-		}
-		@keyframes yt_color_change {
-			from { color: #afafaf; }
-			to { color: #ff0000; }
-		}
-    
-    .social-link:hover i.yt {
-      -webkit-animation: yt_color_change .5s;
-			-moz-animation: yt_color_change .5s;
-			-ms-animation: yt_color_change .5s;
-			-o-animation: yt_color_change .5s;
-			animation: yt_color_change .5s;
-      color: #ff0000;
-    }
-    
-    
-    @-webkit-keyframes fb_color_change {
-			from { color: #afafaf; }
-			to { color: #4267b2; }
-		}
-		@-moz-keyframes fb_color_change {
-			from { color: #afafaf; }
-			to { color: #4267b2; }
-		}
-		@-ms-keyframes fb_color_change {
-			from { color: #afafaf; }
-			to { color: #4267b2; }
-		}
-		@-o-keyframes fb_color_change {
-			from { color: #afafaf; }
-			to { color: #4267b2; }
-		}
-		@keyframes fb_color_change {
-			from { color: #afafaf; }
-			to { color: #4267b2; }
-		}
-    
-    .social-link:hover i.fb {
-      -webkit-animation: fb_color_change .5s;
-			-moz-animation: fb_color_change .5s;
-			-ms-animation: fb_color_change .5s;
-			-o-animation: fb_color_change .5s;
-			animation: fb_color_change .5s;
-      color: #4267b2
-    }
-    
-    @-webkit-keyframes tw_color_change {
-			from { color: #afafaf; }
-			to { color: #1da1f2; }
-		}
-		@-moz-keyframes tw_color_change {
-			from { color: #afafaf; }
-			to { color: #1da1f2; }
-		}
-		@-ms-keyframes tw_color_change {
-			from { color: #afafaf; }
-			to { color: #1da1f2; }
-		}
-		@-o-keyframes tw_color_change {
-			from { color: #afafaf; }
-			to { color: #1da1f2; }
-		}
-		@keyframes tw_color_change {
-			from { color: #afafaf; }
-			to { color: #1da1f2; }
-		}
-    
-    .social-link:hover i.tw {
-      -webkit-animation: tw_color_change .5s;
-			-moz-animation: tw_color_change .5s;
-			-ms-animation: tw_color_change .5s;
-			-o-animation: tw_color_change .5s;
-			animation: tw_color_change .5s;
-      color: #1da1f2;
-    }
-    </style>
-  </head>
-  <body>
-    <div class="jumbotron vertical-center">
-      <div class="container">
-        <h1 class="title">aa<span class="text-danger">r</span>estu</h1>
-        <div class="text-center">
-        
-          
-          <a href="mailto:restu.suhendar@gmail.com" target="_blank" class="social-link">
-            <i class="fas fa-at gt"></i>
-          </a>
-          
-          <a href="https://www.linkedin.com/in/restusuhendar" target="_blank" class="social-link">
-            <i class="fab fa-linkedin-in in"></i>
-          </a>
-          
-          <a href="https://github.com/aarestu" target="_blank" class="social-link">
-            <i class="fab fa-github gt"></i>
-          </a>
-          
-          <a href="https://www.youtube.com/user/inforestu" target="_blank" class="social-link">
-            <i class="fab fa-youtube yt"></i>
-          </a>
-          
-          <a href="https://facebook.com/restu.suhendar" target="_blank" class="social-link">
-            <i class="fab fa-facebook-f fb"></i>
-          </a>
-          
-          <a href="https://twitter.com/aarestu_" target="_blank" class="social-link">
-            <i class="fab fa-twitter tw"></i>
-          </a>
-          
-        </div>
+		display: flex;
+		align-items: center;
+	}
+	.title {
+		font-family: 'Comfortaa', cursive;
+		text-align: center;
+		font-size: 9em;
+	}
+	.social-link {
+		border: 1px solid #afafaf;
+		display: inline-block;
+		font-size: 18px;
+		width: 34px;
+		height: 34px;
+		line-height: 34px;
+		text-align: center;
+		vertical-align: middle;
+		margin: 0 1px 8px;
+		-webkit-border-radius: 17px; 
+		-moz-border-radius: 17px; 
+		border-radius: 17px; 
 
-      </div>
-    </div>
-    
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  </body>
+	}
+
+	.social-link i {
+		color:#afafaf;
+    line-height: 30px;
+	}
+	@-webkit-keyframes in_color_change {
+		from { color: #afafaf; }
+		to { color: #0077B5; }
+	}
+	@-moz-keyframes in_color_change {
+		from { color: #afafaf; }
+		to { color: #0077B5; }
+	}
+	@-ms-keyframes in_color_change {
+		from { color: #afafaf; }
+		to { color: #0077B5; }
+	}
+	@-o-keyframes in_color_change {
+		from { color: #afafaf; }
+		to { color: #0077B5; }
+	}
+	@keyframes in_color_change {
+		from { color: #afafaf; }
+		to { color: #0077B5; }
+	}
+
+	.social-link:hover i.in {
+		-webkit-animation: in_color_change .5s;
+		-moz-animation: in_color_change .5s;
+		-ms-animation: in_color_change .5s;
+		-o-animation: in_color_change .5s;
+		animation: in_color_change .5s;
+		color: #0077B5;
+	}
+
+	@-webkit-keyframes gt_color_change {
+		from { color: #afafaf; }
+		to { color: #000000; }
+	}
+	@-moz-keyframes gt_color_change {
+		from { color: #afafaf; }
+		to { color: #000000; }
+	}
+	@-ms-keyframes gt_color_change {
+		from { color: #afafaf; }
+		to { color: #000000; }
+	}
+	@-o-keyframes gt_color_change {
+		from { color: #afafaf; }
+		to { color: #000000; }
+	}
+	@keyframes gt_color_change {
+		from { color: #afafaf; }
+		to { color: #000000; }
+	}
+
+	.social-link:hover i.gt {
+		-webkit-animation: gt_color_change .5s;
+		-moz-animation: gt_color_change .5s;
+		-ms-animation: gt_color_change .5s;
+		-o-animation: gt_color_change .5s;
+		animation: gt_color_change .5s;
+		color: #000000;
+	}
+
+	@-webkit-keyframes yt_color_change {
+		from { color: #afafaf; }
+		to { color: #ff0000; }
+	}
+	@-moz-keyframes yt_color_change {
+		from { color: #afafaf; }
+		to { color: #ff0000; }
+	}
+	@-ms-keyframes yt_color_change {
+		from { color: #afafaf; }
+		to { color: #ff0000; }
+	}
+	@-o-keyframes yt_color_change {
+		from { color: #afafaf; }
+		to { color: #ff0000; }
+	}
+	@keyframes yt_color_change {
+		from { color: #afafaf; }
+		to { color: #ff0000; }
+	}
+
+	.social-link:hover i.yt {
+		-webkit-animation: yt_color_change .5s;
+		-moz-animation: yt_color_change .5s;
+		-ms-animation: yt_color_change .5s;
+		-o-animation: yt_color_change .5s;
+		animation: yt_color_change .5s;
+		color: #ff0000;
+	}
+
+
+	@-webkit-keyframes fb_color_change {
+		from { color: #afafaf; }
+		to { color: #4267b2; }
+	}
+	@-moz-keyframes fb_color_change {
+		from { color: #afafaf; }
+		to { color: #4267b2; }
+	}
+	@-ms-keyframes fb_color_change {
+		from { color: #afafaf; }
+		to { color: #4267b2; }
+	}
+	@-o-keyframes fb_color_change {
+		from { color: #afafaf; }
+		to { color: #4267b2; }
+	}
+	@keyframes fb_color_change {
+		from { color: #afafaf; }
+		to { color: #4267b2; }
+	}
+
+	.social-link:hover i.fb {
+		-webkit-animation: fb_color_change .5s;
+		-moz-animation: fb_color_change .5s;
+		-ms-animation: fb_color_change .5s;
+		-o-animation: fb_color_change .5s;
+		animation: fb_color_change .5s;
+		color: #4267b2
+	}
+
+	@-webkit-keyframes tw_color_change {
+		from { color: #afafaf; }
+		to { color: #1da1f2; }
+	}
+	@-moz-keyframes tw_color_change {
+		from { color: #afafaf; }
+		to { color: #1da1f2; }
+	}
+	@-ms-keyframes tw_color_change {
+		from { color: #afafaf; }
+		to { color: #1da1f2; }
+	}
+	@-o-keyframes tw_color_change {
+		from { color: #afafaf; }
+		to { color: #1da1f2; }
+	}
+	@keyframes tw_color_change {
+		from { color: #afafaf; }
+		to { color: #1da1f2; }
+	}
+
+	.social-link:hover i.tw {
+		-webkit-animation: tw_color_change .5s;
+		-moz-animation: tw_color_change .5s;
+		-ms-animation: tw_color_change .5s;
+		-o-animation: tw_color_change .5s;
+		animation: tw_color_change .5s;
+		color: #1da1f2;
+	}
+</style>
+</head>
+<body>
+	<div class="jumbotron vertical-center">
+		<div class="container">
+			<h1 class="title">aa<span class="text-danger">r</span>estu</h1>
+			<div class="text-center">
+
+
+				<a href="mailto:restu.suhendar@gmail.com" target="_blank" class="social-link">
+					<i class="fas fa-at gt"></i>
+				</a>
+
+				<a href="https://www.linkedin.com/in/restusuhendar" target="_blank" class="social-link">
+					<i class="fab fa-linkedin-in in"></i>
+				</a>
+
+				<a href="https://github.com/aarestu" target="_blank" class="social-link">
+					<i class="fab fa-github gt"></i>
+				</a>
+
+				<a href="https://www.youtube.com/user/inforestu" target="_blank" class="social-link">
+					<i class="fab fa-youtube yt"></i>
+				</a>
+
+				<a href="https://facebook.com/restu.suhendar" target="_blank" class="social-link">
+					<i class="fab fa-facebook-f fb"></i>
+				</a>
+
+				<a href="https://twitter.com/aarestu_" target="_blank" class="social-link">
+					<i class="fab fa-twitter tw"></i>
+				</a>
+
+			</div>
+
+		</div>
+	</div>
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
 </html>
